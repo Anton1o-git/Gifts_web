@@ -1,11 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Головна сторінка</title>
+	<meta charset="UTF-8">
+	<title>Подарунки — Головна</title>
+	<style>
+		body {
+			background-color: #d3fcff;
+		}
+		a {
+			color: darkred;
+		}
+	</style>
 </head>
 <body>
-    <h1>ІС-33 Лихоліт Антон</h1>
+
+	<h1 align="center">Найкращі ідеї подарунків</h1>
+
+	<!-- Абзаци -->
+	<p><font face="Arial" size="4" color="darkblue"><b>Подарунок</b> — це <b><i>особливий прояв уваги</i></b>, який ми даруємо близьким.</font></p>
+	<p><font face="Verdana" size="3" color="green">У цій статті ви знайдете поради, як вибрати <i>ідеальний</i> подарунок до будь-якого свята.</font></p>
+
+	<!-- Посилання -->
+	<p>
+		<a href="offers.html">Аційні товари!</a><br>
+		<a href="#section1">Перейти до секції "Списки"</a><br>
+		<a href="https://rozetka.com.ua/" target="_blank">Перейти в інтернет-магазин</a>
+	</p>
+
+	<!-- Картинка -->
+	<a href="./img/gift.jpg" target="_blank">
+		<img src="./img/gift.jpg" width="100" height="100" alt="Подарунок"><br>
+	</a>
+	<a href="./img/gift.jpg" target="_blank">
+		<img src="./img/gift.jpg" width="200" height="200" alt="Подарунок">
+	</a>
+
+	<!-- Списки -->
+	<h2 id="section1">Списки ідей</h2>
+
+	<ul type="circle">
+		<li>Книга</li>
+		<li>Подарунковий сертифікат</li>
+		<li>Косметика</li>
+	</ul>
+
+	<ol type="A">
+		<li>Ручка</li>
+		<li>Гаманець</li>
+		<li>Чайний набір</li>
+	</ol>
+
+	<dl>
+		<dt><b>Сюрприз</b></dt>
+		<dd>Несподіваний подарунок</dd>
+		<dt><b>Подарунок-враження</b></dt>
+		<dd>Квитки на концерт</dd>
+	</dl>
+
+	<!-- Таблиця 3x4 -->
+	<h2>Подарункова таблиця</h2>
+	<table border="1" cellpadding="5" cellspacing="0">
+		<caption><b>Ідеї подарунків</b></caption>
+		<tr bgcolor="#dcdcdc">
+			<th>Фото</th>
+			<th>Посилання</th>
+			<th>Опис</th>
+			<th>Ціна</th>
+		</tr>
+		<tr>
+			<td><img src="./img/teabox.jpg" width="100" height="100"></td>
+			<td><a href="https://rozetka.com.ua/teahouse_2500000105623/p159592651/">Перейти</a></td>
+			<td>Чайний набір</td>
+			<td>653 грн</td>
+		</tr>
+		<tr>
+			<td><img src="./img/book.jpg" width="100" height="100"></td>
+			<td><a href="https://rozetka.com.ua/knigi/c4326572/#search_text=%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8">Перейти</a></td>
+			<td>Цікава книга</td>
+			<td>200-1500 грн</td>
+		</tr>
+	</table>
+
+	<p><font face="Tahoma" size="4" color="brown">
+		Одним із чудових подарунків може бути <b>плитка шоколаду</b>. Це універсальний, смачний та приємний сюрприз, який підходить майже до будь-якого свята. <br>
+		Шоколад символізує турботу, тепло і позитивні емоції. Існує багато видів шоколаду — від класичного молочного до вишуканого темного з різними начинками.
+	</font></p>
+
+	<!-- Складна таблиця -->
+	<h2>Порівняння шоколаду</h2>
+	<table border="1" cellpadding="10" cellspacing="5">
+		<colgroup>
+			<col span="2" style="background-color:#ffeecc">
+			<col style="background-color:#e0e0ff">
+		</colgroup>
+		<tr align="center">
+			<th colspan="2">Назва</th>
+			<th>Ціна</th>
+		</tr>
+		<tr>
+			<td rowspan="2">Набір шоколаду</td>
+			<td>Темний</td>
+			<td align="right">150 грн</td>
+		</tr>
+		<tr>
+			<td>Молочний</td>
+			<td align="right">140 грн</td>
+		</tr>
+	</table>
+
+	<!-- Фрейм -->
+	<h2>Плаваючий фрейм</h2>
+	<iframe src="./img/flowers.jpg" width="516" height="450" style="float:left;"></iframe>
+
 </body>
 </html>

@@ -1,0 +1,77 @@
+/* Стиль для тіла */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #dafff6;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Заголовки */
+h1, h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    font-style: italic;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* Посилання (зовнішній стиль) */
+a {
+    color: #008111;
+    text-decoration: none;
+}
+a:hover {
+    color: hsl(226, 76%, 69%);
+}
+
+#highlight-link {
+    color: rgb(252, 74, 74) !important;
+}
+#highlight-link:hover {
+    color: hsl(34, 100%, 57%) !important;
+}
+
+/* Клас */
+.highlight-text {
+    color: #ff6b5b;
+    font-weight: bold;
+}
+
+/* Списки */
+ul, ol {
+    padding-left: 20px;
+    font-size: 16px;
+    color: #0e9099;
+}
+
+dl {
+    font-size: 16px;
+    color: #0077ff;
+}
+
+dt {
+    font-weight: bold;
+    color: #003e6b;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+/* Таблиця */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #b6ffe1;
+}
+
+
+th, td {
+    border: 1px solid #d3d3d3;
+    padding: 8px;
+    text-align: left;
+}

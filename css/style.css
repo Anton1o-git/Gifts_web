@@ -75,3 +75,67 @@ th, td {
     padding: 8px;
     text-align: left;
 }
+
+/*Контекстний селектор */
+div p {
+    background-color: #f5fff5;
+    padding: 5px;
+    border-left: 3px solid #aaffaa;
+}
+
+/*Сусідній селектор */
+h2 + div {
+    margin-top: 10px;
+    background-color: #d2fdcc;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/*Дочірній селектор */
+ul > li {
+    list-style-type: square;
+    color: #006060;
+}
+
+.page-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00a86b;
+    color: white !important;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #007a4d;
+    text-decoration: none;
+}
+
+.gift-table {
+    width: 90%;
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+    font-size: 16px;
+    background-color: #fff6e6;
+}
+
+.gift-table th, .gift-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.gift-table caption {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}

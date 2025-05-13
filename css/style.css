@@ -138,3 +138,102 @@ ul > li {
     margin-bottom: 10px;
     font-weight: bold;
 }
+
+/* Позиціонування */
+.gift-warehouse {
+    position: relative;
+    height: 250px;
+    background-color: #fff3e6;
+    margin: 30px auto;
+    width: 90%;
+    border: 3px dashed #ff9900;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.gift-box {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/gift.jpg");
+    background-size: cover;
+    border: 3px solid #cc0000;
+    border-radius: 10px;
+    margin: 100px auto 0;
+}
+
+.gift-balloon {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    animation: float 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    from { transform: translateX(-50%) translateY(0); }
+    to { transform: translateX(-50%) translateY(-20px); }
+}
+
+.gift-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffd700;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gift-fixed:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Псевдокласи */
+ul li:first-child {
+    color: darkred;
+}
+
+ul li:last-child {
+    color: darkgreen;
+}
+
+ul li:nth-child(2) {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: orange;
+}
+
+textarea:focus {
+    border: 2px solid #00aaff;
+    background-color: #e0f7ff;
+}
+
+/* Псевдоелементи */
+p::first-line {
+    font-weight: bold;
+    color: #2a2a72;
+}
+
+p::first-letter {
+    font-size: 130%;
+    color: rgb(255, 43, 85);
+}
+
+h2::before {
+    content: "🎁 ";
+}
+
+h2::after {
+    content: " ✨";
+}

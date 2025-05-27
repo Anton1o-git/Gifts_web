@@ -237,3 +237,41 @@ h2::before {
 h2::after {
     content: " ✨";
 }
+
+#hover-area {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.hover-gift {
+    padding: 15px;
+    border: 2px dashed #009688;
+    border-radius: 8px;
+    background-color: #e0ffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hover-gift.hovered {
+    background-color: #b2dfdb;
+    transform: scale(1.05);
+    font-weight: bold;
+    color: #004d40;
+}
+
+#drag-container {
+    position: relative;
+    height: 150px;
+    background-color: #fffde7;
+    border: 2px dashed #fbc02d;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#draggable-gift {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: grab;
+}

@@ -59,3 +59,42 @@ menu.onclick = function (event) {
             alert("Невідома дія");
     }
 };
+
+// Лаба 8
+const hoverItems = document.querySelectorAll(".hover-gift");
+
+hoverItems.forEach(function(item) {
+    item.addEventListener("mouseover", function(event) {
+        const from = event.relatedTarget;
+        if (!from || !item.contains(from)) {
+            event.target.classList.add("hovered");
+        }
+    });
+
+    item.addEventListener("mouseout", function(event) {
+        const to = event.relatedTarget;
+        if (!to || !item.contains(to)) {
+            event.target.classList.remove("hovered");
+        }
+    });
+});
+
+const gift = document.getElementById("draggable-gift");
+let isDragging = false;
+
+gift.addEventListener("mousedown", function (event) {
+    isDragging = true;
+    gift.style.cursor = "grabbing";
+});
+
+document.addEventListener("mousemove", function (event) {
+    if (!isDragging) return;
+    const containerRect = document.getElementById("drag-container").getBoundingClientRect();
+    gift.style.left = (event.clientX - containerRect.left - gift.offsetWidth / 2) + "px";
+    gift.style.top = (event.clientY - containerRect.top - gift.offsetHeight / 2) + "px";
+});
+
+document.addEventListener("mouseup", function () {
+    isDragging = false;
+    gift.style.cursor = "grab";
+});

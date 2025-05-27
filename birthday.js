@@ -94,8 +94,6 @@ function manipulateDOM() {
         repl.remove();
     }, 12000);
 
-    // write
-    document.write("<p style='color: red;'Привіт)</p>");
 }
 
 document.getElementById("start-dialog").addEventListener("click", userDialog);

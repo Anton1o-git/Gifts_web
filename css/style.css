@@ -271,6 +271,7 @@ h2::after {
 
 #draggable-gift {
     position: absolute;
+    z-index: 1000;
     left: 10px;
     top: 10px;
     cursor: grab;
